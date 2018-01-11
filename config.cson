@@ -1,5 +1,30 @@
 "*":
+  "autocomplete-plus":
+    confirmCompletion: "tab always, enter when suggestion explicitly selected"
   core:
+    disabledPackages: [
+      "markdown-preview"
+    ]
+    telemetryConsent: "limited"
+    themes: [
+      "one-light-ui"
+      "one-light-syntax"
+    ]
     uriHandlerRegistration: "always"
+  editor:
+    invisibles: {}
+    tabLength: 4
+    tabType: "soft"
+    zoomFontWhenCtrlScrolling: false
   "exception-reporting":
-    userId: "d204c26b-ff26-479b-b650-0fcb30a75d8f"
+    userId: "c60c813f-0bb4-4423-bf64-4d7963289f9c"
+  "markdown-preview-plus":
+    enableLatexRenderingByDefault: true
+    useGitHubStyle: true
+  "spell-check":
+    locales: [
+      "en-US"
+      "de-DE"
+    ]
+  welcome:
+    showOnStartup: false
