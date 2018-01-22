@@ -9,3 +9,16 @@
 # atom.workspace.observeTextEditors (editor) ->
 #   editor.onDidSave ->
 #     console.log "Saved! #{editor.getPath()}"
+
+atom.commands.add 'atom-text-editor',
+  'editor:scroll-down': ->
+    editor = atom.workspace.getActiveTextEditor()
+    editorElement = atom.views.getView(editor)
+    newScrollTop = editorElement.getScrollTop() + editor.getLineHeightInPixels()
+    editorElement.setScrollTop(newScrollTop)
+
+  'editor:scroll-up': ->
+    editor = atom.workspace.getActiveTextEditor()
+    editorElement = atom.views.getView(editor)
+    newScrollTop = editorElement.getScrollTop() - editor.getLineHeightInPixels()
+    editorElement.setScrollTop(newScrollTop)

@@ -30,3 +30,14 @@
 # If you are unfamiliar with CSON, you can read more about it in the
 # Atom Flight Manual:
 # http://flight-manual.atom.io/using-atom/sections/basic-customization/#configuring-with-cson
+
+'atom-workspace':
+    'ctrl-shift-w': 'tabs:close-all-tabs'
+
+'.editor':
+    'ctrl-backspace': 'editor:delete-to-previous-word-boundary'
+    'ctrl-delete': 'editor:delete-to-next-word-boundary'
+    'ctrl-left': 'editor:move-to-previous-word-boundary'
+    'ctrl-right': 'editor:move-to-next-word-boundary'
+    'ctrl-up': 'editor:scroll-up'
+    'ctrl-down': 'editor:scroll-down'
